@@ -18,8 +18,7 @@ var SalaryUpgrader = (function () {
     SalaryUpgrader.prototype.addBonus = function (empList) {
         this.rateEmployee(empList);
         empList.map(function (emp, i) {
-            console.log(i);
-            emp.rating >= 3 ? emp.bonus = i * 100 : emp.bonus = 0;
+            emp.rating >= 3 ? emp.bonus = (i / 2) * 1000 : emp.bonus = 0;
         });
     };
     return SalaryUpgrader;
