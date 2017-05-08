@@ -19,7 +19,7 @@ export class SalaryUpgrader {
     addBonus(empList: Employee[]) {
         this.rateEmployee(empList);
         empList.map((emp,i) => {
-            emp.rating >= 3 ? emp.bonus = i * 100 : emp.bonus = 0;
+            emp.rating >= 3 ? emp.bonus = (i/2) * 1000 : emp.bonus = 0;
         })
     }
 }
